@@ -31,12 +31,10 @@ switch (operator) {
 
 let userAge = Number(prompt('Сколько Вам лет?'));
 
-if (( userAge >= 12 && userAge < 18 ) || ( userAge >=60 && userAge <= 80 )); {
-    alert('Вход только с разрешения взрослых');
-}
-else if (userAge >= 18 && userAge < 60); {
+if (( userAge >= 12 && userAge < 18 ) || ( userAge >= 60 && userAge <= 80 )) {
+    alert('Вход только с разрешения взрослых')
+} else if (userAge >= 18 && userAge < 60) {
     alert('Вход разрешён');
-} 
-else {
+} else {
     alert('Вход запрещён');
 }
