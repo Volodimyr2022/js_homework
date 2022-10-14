@@ -1,8 +1,3 @@
-
-
-
-const PASSWORD = 'Dh00u123\>';
-
 const authorize = () => {
     let userPassword;
     let userName;
@@ -18,12 +13,12 @@ const authorize = () => {
             alert('Введите фамилию');
         continue
         };
-            userPassword = prompt('Пароль') 
-            if (!userPassword) {
+            userPassword = prompt('Пароль')
+            const lengthUserPassword = userPassword.length;
+                if (lengthUserPassword < 6) {
                 alert('Введите пароль');
             continue
-            };
-            if (userPassword === PASSWORD) {
+            } else {
                 let lowerCaseName = userName.toLowerCase();
                 let firstLetterName = lowerCaseName.slice(0, 1);
                 let upperFirstLetterName = firstLetterName.toUpperCase();
@@ -37,8 +32,8 @@ const authorize = () => {
                 alert(`'Здравтсвуйте' ${newUserName} ${newUserSurname}`);
             continue
             };
-            break;
-    }while(false)   
+            // break;
+    }while(true)   
 }
 authorize()
 
