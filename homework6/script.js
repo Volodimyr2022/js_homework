@@ -14,8 +14,7 @@ const authorize = () => {
         continue
         };
             userPassword = prompt('Пароль')
-            const lengthUserPassword = userPassword.length;
-                if (lengthUserPassword < 6) {
+                if (userPassword.length < 6) {
                 alert('Введите пароль');
             continue
             } else {
