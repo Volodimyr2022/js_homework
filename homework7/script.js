@@ -12,14 +12,18 @@ const sheet = () => {
         };
         active = prompt('Что Вы хотите делать?')
         if(!active) {
-            alert('Укажите занятие');12
+            alert('Укажите занятие');
             continue
         };
         
         timeTable[time] = active; 
            
-    } while(false)
-    return(timeTable)
+    } while ((time && active) !== null) {
+        timeTable[time] = active
+       };
+         
+       return(timeTable);
+     
 }
 sheet()
 
