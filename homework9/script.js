@@ -51,63 +51,104 @@
 // console.log(numbers)
 
 
-const data = [
-  {
-    name: "John",
-    age: 24,
-    position: "senior",
-    isActive: false,
-  },
-  {
-    name: "Peter",
-    age: 33,
-    position: "middle",
-    isActive: false,
-  },
-  {
-    name: "Sam",
-    age: 29,
-    position: "junior",
-    isActive: true,
-  },
-  {
-    name: "Mary",
-    age: 24,
-    position: "middle",
-    isActive: false,
-  },
-  {
-    name: "Steve",
-    age: 23,
-    position: "middle",
-    isActive: true,
-  },
-  {
-    name: "Kate",
-    age: 31,
-    position: "middle",
-    isActive: false,
-  },
-  {
-    name: "Sally",
-    age: 19,
-    position: "junior",
-    isActive: false,
-  },
-  {
-    name: "Jack",
-    age: 19,
-    position: "middle",
-    isActive: true,
-  },
-];
+
+// const logger = (element, index, array) => {
+//   console.log(`In array [${array}] on position ${index}: ${element}`);
+// };
+// const ownForEach = (arr, logger) => {
+//   for(let num of arr) {
+//     logger(num, arr.indexOf(num), arr)
+//   }
+// }
+// const res = ownForEach([1, 2, 3], logger);
+// console.log(res)
 
 
-  const filterData = (arr, obj) => {              
-    const sort = data.filter((point) => point.obj) 
+// const isNegative = (number) => number < 0;
+// const ownFilter = (arr, isNegative) => {
+//   let negativeArr = [];
+//   for(let num of arr){
+//     if(isNegative(num) === true) {
+//     negativeArr.push(num)
+//     }
+//   }
+//   return negativeArr
+// };
+// const res = ownFilter([-2, 4, -1], isNegative);
+// console.log(res)
+
+
+
+// const increment = (number) => number + 1;
+// const ownMap = (arr, increment) => {
+//   let incrementNumber = []
+//   for(let num of arr) {
+//     incrementNumber.push(increment(num))
+//   }  
+// return incrementNumber  
+// }
+// const res = ownMap([1, 2, 3], increment); 
+// console.log(res)
+
+
+
+// const data = [
+//   {
+//     name: "John",
+//     age: 24,
+//     position: "senior",
+//     isActive: false,
+//   },
+//   {
+//     name: "Peter",
+//     age: 33,
+//     position: "middle",
+//     isActive: false,
+//   },
+//   {
+//     name: "Sam",
+//     age: 29,
+//     position: "junior",
+//     isActive: true,
+//   },
+//   {
+//     name: "Mary",
+//     age: 24,
+//     position: "middle",
+//     isActive: false,
+//   },
+//   {
+//     name: "Steve",
+//     age: 23,
+//     position: "middle",
+//     isActive: true,
+//   },
+//   {
+//     name: "Kate",
+//     age: 31,
+//     position: "middle",
+//     isActive: false,
+//   },
+//   {
+//     name: "Sally",
+//     age: 19,
+//     position: "junior",
+//     isActive: false,
+//   },
+//   {
+//     name: "Jack",
+//     age: 19,
+//     position: "middle",
+//     isActive: true,
+//   },
+// ];
+
+
+//   const filterData = (arr, obj) => {              
+//     const sort = data.filter((point) => point.obj) 
     
   
-  };
-  const res = filterData(data, {position: "middle"})  
+//   };
+//   const res = filterData(data, {position: "middle"})  
   
                                  
