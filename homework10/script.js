@@ -14,7 +14,7 @@ const books = [
   },
 ];
 function library() {
-    let action = prompt('Action?');
+    let action = prompt('Action? take - взять книгу; return - вернуть книгу; add - добавить книгу');
 
     if(action === null) {
         alert('Bye!');
