@@ -147,31 +147,17 @@ const data = [
 ];
 
 
-  // const filterData = (dataArr, templateObjectForFilter) => {              
-  //   let sort = dataArr.filter(point => {
-  //       console.log('keys:', Object.keys(templateObjectForFilter))
-  //       return Object.keys(templateObjectForFilter).every(key => {
-  //         console.log(point[key], 'и', templateObjectForFilter[key], '=', point[key] === templateObjectForFilter[key])  
-  //           return point[key] === templateObjectForFilter[key]
-  //       })
-  //   }); 
-  // return sort 
-  // };
-  // const resFilter = filterData(data, { position: "middle", age: 19, isActive: true })  
-  // console.log(resFilter)
-                                 
   const filterData = (dataArr, templateObjectForFilter) => {              
-    const sort = dataArr.filter(point => {
-      console.log('keys:', Object.keys(templateObjectForFilter))
-        for(let key in point) {
-          console.log(point[key], 'и', templateObjectForFilter[key], '=', point[key] === templateObjectForFilter[key])
-         if(point[key] === templateObjectForFilter[key]) {
-          return key
-         }
-        }
-      });
-    return sort 
+    let sort = dataArr.filter(point => {
+        console.log('keys:', Object.keys(templateObjectForFilter))
+        return Object.keys(templateObjectForFilter).every(key => {
+          console.log(point[key], 'и', templateObjectForFilter[key], '=', point[key] === templateObjectForFilter[key])  
+            return point[key] === templateObjectForFilter[key]
+        })
+    }); 
+  return sort 
   };
   const resFilter = filterData(data, { position: "middle", age: 19, isActive: true })  
-  console.log(resFilter)
-                                 
+  // console.log(resFilter);
+  console.dir(filterData)                               
+ 
