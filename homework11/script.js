@@ -24,14 +24,14 @@ const createCardProduct = (name, brand, price, properties) => {
     const titleElement = document.createElement('h2');
     const subtitleElement = document.createElement('h3');
     const priceElement = document.createElement('p');
-    const textContainer = document.createElement('div');
+    const textContainer = document.createElement('ul');
 
     titleElement.innerText = name;
     subtitleElement.innerText = brand;
     priceElement.innerText = price;
 
     properties.forEach((paragraph) => {
-        const paragraphElement =  document.createElement('p');
+        const paragraphElement =  document.createElement('li');
         paragraphElement.innerText = paragraph;
 
         textContainer.append(paragraphElement)       
@@ -42,6 +42,5 @@ const createCardProduct = (name, brand, price, properties) => {
 };
 
 const res = createCardProduct('Iphone 12', 'Apple', 3200000, ['Best camera', 'Fast memory', 'Apple A12 Processor']);
-console.log(res)
-
+document.body.append(res)
 
