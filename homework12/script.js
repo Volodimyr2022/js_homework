@@ -26,7 +26,7 @@ createToolTip = (button, text) => {
     const toolTipTop = anchorButtonCoords.top - 10 - toolTip.clientHeight;
 
     const toolTipLeft = anchorButtonCoords.left +
-    anchorButtonCoords.Width / 2 -
+    anchorButtonCoords.width / 2 -
     toolTip.clientWidth / 2;
 
     toolTip.style.top = `${toolTipTop}px`
