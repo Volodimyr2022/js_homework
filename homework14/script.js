@@ -115,7 +115,7 @@ const createForm = (arrFormData) => {
             const select = createSelect(formElement)
             divWrapper.append(label, select)
         }
-
+        
          form.append(divWrapper)
     })
 
