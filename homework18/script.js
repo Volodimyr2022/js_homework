@@ -50,7 +50,7 @@
 //     container.append(postContainer)  
 // }
 
-const cont = document.createElement('div')
+const cont = document.getElementById('cont');
 
 const postXhr = new XMLHttpRequest();
 postXhr.onreadystatechange = () => {
@@ -84,35 +84,35 @@ postXhr.onload = () => {
     
 }
 
-
-
 const renderPost = (postsList, container) => {
 
     const posts = postsList.map((post) => {
-        
+        console.log(post)
         const postContainer = document.createElement('div');
         const postTitle = document.createElement('h2');
         const postText = document.createElement('p');
         const button = document.createElement('button')
 
         postTitle.innerText = post.title;
+        console.log(postTitle)
         postText.innerText = post.body;
+        console.log(postText)
         button.innerText = 'Show comments';
+        console.log(button)
         postContainer.classList.add('post-container');
         button.classList.add('button');
 
         postContainer.append(postTitle, postText, button);
-         
+         console.log(postContainer)
         let postsId = post.id;
         
         button.addEventListener('click', (event) => {
             getPostComments(postsId, event)
         })
-        
+       
     })
-    
-    container.append(...posts)
-   
+    container.append(...posts);
+    console.log(posts);
 }
 
 
